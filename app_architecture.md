@@ -40,6 +40,7 @@
 ### Тут ссылка на архитектуру веб приложение
 [MIRO](https://miro.com/welcomeonboard/OFRKQTdnS0JZTTJvSHQ3RUhpcTEycEdBMk94UVpIMGFEZE5PaHRVYUVwcjJsaWNMU2loYmNDOTFwM0hsQmpCVnwzMDc0NDU3MzU1MTA0NjA5MzI5fDI=?share_link_id=888767414667)
 
+---
 Дальше надо еше углублятся по каждому пункту и в отдельном файле описать дальнейшую бизнес логику по каждому микросервису, в особенности ядра `CORE`. Нарисовать `UML` схемы и описать все бизнес процессы.
 Так же предпологается внедререние: 
 - [gitlab.datamp.ru](https://gitlab.com) для хранение репозиториев каждого микросервиса как отдельного проекта и взаимодействие с CI/CD,
