@@ -38,8 +38,10 @@
 В основном для кэширования данных
 
 ---
+
 ### ВАЖНО: Визуальная Архитектура веб приложение
 Тут ссылка на визуальную архитектуру веб приложения: [MIRO](https://miro.com/welcomeonboard/OFRKQTdnS0JZTTJvSHQ3RUhpcTEycEdBMk94UVpIMGFEZE5PaHRVYUVwcjJsaWNMU2loYmNDOTFwM0hsQmpCVnwzMDc0NDU3MzU1MTA0NjA5MzI5fDI=?share_link_id=888767414667)
+
 ---
 
 ### Так же предпологается внедререние:
