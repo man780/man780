@@ -37,11 +37,11 @@
 #### Redis
 В основном для кэширования данных
 
-### Архитектуру веб приложение
-Тут ссылка на архитектуру веб приложение: [MIRO](https://miro.com/welcomeonboard/OFRKQTdnS0JZTTJvSHQ3RUhpcTEycEdBMk94UVpIMGFEZE5PaHRVYUVwcjJsaWNMU2loYmNDOTFwM0hsQmpCVnwzMDc0NDU3MzU1MTA0NjA5MzI5fDI=?share_link_id=888767414667)
+### ВАЖНО: Визуальная Архитектура веб приложение
+Тут ссылка на визуальную архитектуру веб приложения: [MIRO](https://miro.com/welcomeonboard/OFRKQTdnS0JZTTJvSHQ3RUhpcTEycEdBMk94UVpIMGFEZE5PaHRVYUVwcjJsaWNMU2loYmNDOTFwM0hsQmpCVnwzMDc0NDU3MzU1MTA0NjA5MzI5fDI=?share_link_id=888767414667)
 
 ---
 Дальше надо еше углублятся по каждому пункту и в отдельном файле описать дальнейшую бизнес логику по каждому микросервису, в особенности ядра `CORE`. Нарисовать `UML` схемы и описать все бизнес процессы.
 Так же предпологается внедререние:
-- [gitlab.datamp.ru](https://gitlab.com) для хранение репозиториев каждого микросервиса как отдельного проекта и взаимодействие с CI/CD,
+- [gitlab.datamp.ru](https://gitlab.com/) для хранение репозиториев каждого микросервиса как отдельного проекта и взаимодействие с CI/CD,
 - [sentry.datamp.ru](https://sentry.io/) для отслеживание ошибок и управление ими. В удобном интерфейсе отображается все ошибки, так же отправляет ошибки через Telegram, на почту или другими каналами. Можно настроить уровни отпраляемых ошибок (`Critical`, `Error`, `Warning`, ...)
