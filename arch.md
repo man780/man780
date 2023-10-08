@@ -42,3 +42,6 @@
 Тут тоже можно органиовать некоторую логику хранение данных а так же тут можно хранить логи
 #### Redis
 В основном для кэширования данных
+
+### Тут ссылка на архитектуру веб приложение
+[MIRO](https://miro.com/welcomeonboard/OFRKQTdnS0JZTTJvSHQ3RUhpcTEycEdBMk94UVpIMGFEZE5PaHRVYUVwcjJsaWNMU2loYmNDOTFwM0hsQmpCVnwzMDc0NDU3MzU1MTA0NjA5MzI5fDI=?share_link_id=888767414667)
