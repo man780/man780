@@ -18,3 +18,7 @@ v 1.3
 10. setResumeTransfer (Set the broken network transmission)
 11. setPlatformServer
 
+## taskResult
+The device completes the task and returns the results to the server
+## faceRecognition
+After the device recognizes the face, send a recognition record to the server
