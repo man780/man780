@@ -87,3 +87,128 @@
          return session.query(MyModel).get(data_id)
      ```
 
+
+
+# Вопросы
+- Разница между асинхронностью и многопоточностью
+- Multiprocessing multithreading разница ?
+- Что такое gil, зачем он нужен и как python обходит gil ?
+# Ответы
+
+## Разница между Асинхронностью и Многопоточностью
+
+### Асинхронность
+
+**Определение:** Асинхронное программирование - это стиль программирования, который позволяет выполнять другие задачи, в то время как одна задача ожидает завершения какой-то операции, такой как ввод/вывод, вместо блокирования выполнения.
+
+**Пример:**
+```python
+import asyncio
+
+async def foo():
+    print("Start")
+    await asyncio.sleep(2)
+    print("End")
+
+asyncio.run(foo())
+```
+
+### Многопоточность
+
+**Определение:** Многопоточное программирование - это способ выполнения нескольких потоков (небольших подзадач) одновременно, управляемый операционной системой.
+
+**Пример:**
+```python
+import threading
+
+def print_numbers():
+    for i in range(5):
+        print(i)
+
+def print_letters():
+    for letter in 'ABCDE':
+        print(letter)
+
+thread1 = threading.Thread(target=print_numbers)
+thread2 = threading.Thread(target=print_letters)
+
+thread1.start()
+thread2.start()
+
+thread1.join()
+thread2.join()
+```
+
+## Multiprocessing vs. Multithreading
+
+### Multiprocessing (Многопроцессорность)
+
+**Определение:** Multiprocessing - это способ использования нескольких процессов, каждый из которых выполняется в отдельной памяти и имеет свой собственный интерпретатор Python.
+
+**Пример:**
+```python
+from multiprocessing import Process
+
+def foo():
+    print("Hello from process!")
+
+if __name__ == '__main__':
+    process = Process(target=foo)
+    process.start()
+    process.join()
+```
+
+### Multithreading (Многопоточность)
+
+**Определение:** Multithreading - это способ использования нескольких потоков внутри одного процесса для ускорения выполнения программы.
+
+**Пример:**
+```python
+import threading
+
+def print_numbers():
+    for i in range(5):
+        print(i)
+
+def print_letters():
+    for letter in 'ABCDE':
+        print(letter)
+
+thread1 = threading.Thread(target=print_numbers)
+thread2 = threading.Thread(target=print_letters)
+
+thread1.start()
+thread2.start()
+
+thread1.join()
+thread2.join()
+```
+
+## GIL (Global Interpreter Lock)
+
+**Определение:** GIL - это механизм в CPython (стандартная реализация Python), который гарантирует, что только один поток Python выполняет байт-код в любой конкретный момент времени.
+
+**Зачем нужен GIL:**
+1. Облегчение реализации интерпретатора.
+2. Предотвращение конфликтов при изменении объектов в памяти.
+
+**Проблемы GIL:**
+1. **Ограничивает производительность многозадачных приложений:** Из-за GIL выполнение многозадачных приложений в Python может замедляться.
+2. **Не дает реального многозадачного выполнения:** Потоки не могут эффективно использовать многозадачность на многоядерных системах.
+
+**Обход GIL в Python:**
+1. **Использование multiprocessing вместо multithreading:** Использование нескольких процессов вместо потоков для обхода GIL.
+2. **Использование Jython или IronPython:** В этих реализациях Python GIL отсутствует.
+
+**Пример обхода GIL с использованием multiprocessing:**
+```python
+from multiprocessing import Pool
+
+def foo(n):
+    return n * n
+
+if __name__ == '__main__':
+    with Pool(4) as p:
+        result = p.map(foo, [1, 2, 3, 4])
+    print(result)
+```
