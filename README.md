@@ -19,7 +19,7 @@ Here are some ideas to get you started:
 - Where there is a window in the periods of work, it means he worked in the state. organizations as a programmer
 
 #### Performed duties:
-- Creation of many websites, including autogarant.su, www.start.misis.ru, artpoisk.info, iceberg.ru and many others.
+- Creation of many websites, including autogarant.su, artpoisk.info, iceberg.ru and many others.
 - Development of large projects in Django, FastAPI and Flask (some work via VPN, I can demonstrate at an interview) using microservice architecture.
 
 #### Skills:
