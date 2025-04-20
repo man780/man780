@@ -30,3 +30,5 @@ Here are some ideas to get you started:
 - I work with PostgreSQL, MySQL, DB2, ORACLE, MongoDB, Redis (Caching)
 - I speak English at a technical level
 
+### Contacts
+[murat.tatibaev](https://murat.tatibaev.uz)'s personal site
