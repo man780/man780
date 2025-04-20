@@ -3,7 +3,7 @@
 Here are some ideas to get you started:
 
 - 🔭 I’m currently working on **QIWI Uzbekistan**
-- 🌱 I’m currently learning **_GO_** and **_gRPC_**
+- 🌱 I’m currently learning **_AI_** and **_OpenCV_**
 - 👯 I’m looking to collaborate on FinTech, EduTech, HealthTech
 - 🤔 I’m looking for help with **Backend**
 - 📫 How to reach me:
