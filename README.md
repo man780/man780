@@ -7,7 +7,7 @@ Here are some ideas to get you started:
 - 👯 I’m looking to collaborate on FinTech, EduTech, HealthTech
 - 🤔 I’m looking for help with **Backend**
 - 📫 How to reach me:
-  - Telegram: @murattatibaev
+  - Telegram: [@murattatibaev](https://t.me/murattatibaev)
   - email: tatibaevmurod@gmail.com
 
 ### Work expirence
